@@ -129,12 +129,13 @@ img {
     top: 0;
     right: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column;
+    justify-content: center; */ /* h3 é absolute, não é necessário mais o column */
+    align-items: center;
 }
 
 .right-info h1 {
-    font-size: 15.625rem;
+    font-size: 15.6rem;
     color: #fff;
     margin-left: -1%;
 }
@@ -145,4 +146,20 @@ img {
     color: #fff;
     transform: translateY(180%);
     margin-left: 1%;
+}
+
+.copy {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: #fff;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.copy a:hover {
+    text-decoration: underline;
 }
