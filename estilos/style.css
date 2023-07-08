@@ -269,5 +269,10 @@ img {
 
     .nav-icon {
         display: block;
+        margin-left: clamp(2rem, 2vw, 2.5rem);
+    }
+
+    .nav-icon a {
+        margin-left: 1rem;
     }
 }
