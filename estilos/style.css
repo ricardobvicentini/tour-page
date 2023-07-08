@@ -101,9 +101,9 @@ img {
     margin-right: 1%;
 }
 
-/* .nam-blur h1 {
-    font-size: clamp(4.5rem, 12vw, 15.6rem);
-} */
+.blur-lib h1 {
+    margin-right: 0;
+}
 
 .left-info .content {
     position: absolute;
@@ -113,12 +113,10 @@ img {
 }
 
 .content h3 {
-    border: 1px solid red;
     font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .content p {
-    border: 1px solid red;
     font-size: clamp(.7rem, 2vw, 1rem);
     margin: 0.625rem 0.4rem 0.938rem 0;
     text-wrap: balance;
@@ -173,9 +171,9 @@ img {
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* .ri-nam h1 {
-    font-size: clamp(4.5rem, 12vw, 15.6rem);
-} */
+.lib-rinfo h1 {
+    margin-left: 1%;
+}
 
 .copy {
     position: absolute;
