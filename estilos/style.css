@@ -101,6 +101,10 @@ img {
     margin-right: 1%;
 }
 
+/* .nam-blur h1 {
+    font-size: clamp(4.5rem, 12vw, 15.6rem);
+} */
+
 .left-info .content {
     position: absolute;
     bottom: 8%;
@@ -169,12 +173,8 @@ img {
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* .right-info h3 {
-    position: absolute;
-    font-size: 3rem;
-    color: #fff;
-    transform: translateY(220%);
-    margin-left: 1%;
+/* .ri-nam h1 {
+    font-size: clamp(4.5rem, 12vw, 15.6rem);
 } */
 
 .copy {
@@ -201,7 +201,7 @@ img {
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    width: clamp(30vw, 35vw, 40vw);
+    width: clamp(35vw, 35vw, 40vw);
     height: clamp(20vw, 20vw, 25vw);
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
@@ -249,7 +249,7 @@ img {
     transform: translate(0px, 0px);
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-height: 360px) {
     .content p {
         position: absolute;
         left: -10000px;
