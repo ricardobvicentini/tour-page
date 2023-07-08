@@ -279,7 +279,7 @@ img {
 
 .hidden {
     transform: translateX(-100%);
-    transition: 1000ms;
+    transition: 800ms;
     transition-delay: 200ms;
 }
 
