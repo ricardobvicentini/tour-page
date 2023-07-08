@@ -52,6 +52,10 @@ img {
     text-shadow: 0 0 10px;
 }
 
+.nav-icon {
+    display: none;
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -247,7 +251,7 @@ img {
     transform: translate(0px, 0px);
 }
 
-@media screen and (max-height: 360px) {
+@media screen and (max-height: 500px) {
     .content p {
         position: absolute;
         left: -10000px;
@@ -255,5 +259,15 @@ img {
 
     .content h3 {
         margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .nav-normal {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
     }
 }
