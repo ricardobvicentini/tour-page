@@ -7,10 +7,12 @@
     font-family: 'Monteserrat', sans-serif;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 
 img {
     width: 100%;
@@ -206,8 +208,8 @@ img {
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    width: clamp(35vw, 35vw, 40vw);
-    height: clamp(20vw, 20vw, 25vw);
+    width: clamp(31.015vw, 31.115vw, 31.2vw);
+    height: clamp(21.015vw, 21.115vw, 21.2vw);
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
     transform: translate(-50%, -50%);
@@ -218,18 +220,23 @@ img {
 
 .box-btn {
     width: 45%;
-    height: 45%;
+    height: 40%;
     padding: 2.5%;
     border-radius: 10px;
     border: none;
     background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
     font-family: 'Monteserrat', sans-serif;
-    font-size: clamp(.5rem, 1.5vw, 1.7rem);
-    font-weight: 600;
+    font-size: clamp(.5rem, 1.3vw, 1.7rem);
+    font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all 200ms;
+}
+
+.box-btn:hover {
+    text-shadow: 0 0 10px;
 }
 
 .box sh {
@@ -280,10 +287,12 @@ img {
     }
 }
 
+/* JavaScript */
+
 .hidden {
     transform: translateX(-100%);
-    transition: all 1000ms ease-in-out;
-    transition-delay: 200ms;
+    transition: all 800ms ease-in-out;
+    transition-delay: 100ms;
     opacity: 0;
 }
 
@@ -293,12 +302,23 @@ img {
 }
 
 .hidden-right {
-    transition: all 1000ms ease-in-out;
-    transition-delay: 200ms;
+    transition: all 800ms ease-in-out;
+    transition-delay: 100ms;
 }
 
 .show {
     transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 500ms ease-in
+}
+
+.fade-in.appear {
+    filter: blur(0);
     opacity: 1;
 }
 
