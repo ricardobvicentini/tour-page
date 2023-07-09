@@ -282,19 +282,22 @@ img {
 
 .hidden {
     transform: translateX(-100%);
-    transition: 500ms ease-in-out;
+    transition: all 1000ms ease-in-out;
     transition-delay: 200ms;
+    opacity: 0.1;
 }
 
 .hidden-right {
     transform: translateX(100%);
+    opacity: 0.1;
 }
 
 .hidden-right {
-    transition: 500ms ease-in-out;
+    transition: all 1000ms ease-in-out;
     transition-delay: 200ms;
 }
 
 .show {
     transform: translateX(0);
+    opacity: 1;
 }
