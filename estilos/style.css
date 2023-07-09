@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 img {
@@ -281,6 +282,15 @@ img {
 
 .hidden {
     transform: translateX(-100%);
+    transition: 500ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.hidden-right {
+    transform: translateX(100%);
+}
+
+.hidden-right {
     transition: 500ms ease-in-out;
     transition-delay: 200ms;
 }
