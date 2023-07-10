@@ -22,7 +22,7 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.toggle("show", entry.isIntersecting)
     })
 }, {
-    rootMargin: "-200px 0px -200px 0px"
+    rootMargin: "-150px 0px -150px 0px"
 })
 
 hiddenElements.forEach(hidden => {
@@ -37,7 +37,7 @@ const appearOnScroll = new IntersectionObserver(entries => {
         entry.target.classList.toggle("appear", entry.isIntersecting)
     })
 }, {
-    rootMargin: "0px 0px -300px 0px"
+    rootMargin: "0px 0px -200px 0px"
 })
 
 faders.forEach(fader => {

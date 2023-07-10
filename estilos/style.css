@@ -208,8 +208,8 @@ img {
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    width: clamp(31.015vw, 31.115vw, 31.2vw);
-    height: clamp(21.015vw, 21.115vw, 21.2vw);
+    width: clamp(/* 22vw + 3rem */150px, 28vw, 30vw);
+    height: clamp(/* 16vw + 2rem */100px, 18vw, 20vw);
     backdrop-filter: blur(5px);
     transform-style: preserve-3d;
     transform: translate(-50%, -50%);
@@ -219,14 +219,14 @@ img {
 }
 
 .box-btn {
-    width: 45%;
-    height: 40%;
+    width: 55%;
+    height: 45%;
     padding: 2.5%;
     border-radius: 10px;
     border: none;
     background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
     font-family: 'Monteserrat', sans-serif;
-    font-size: clamp(.5rem, 1.3vw, 1.7rem);
+    font-size: clamp(.5rem, 1.5vw, 1.7rem);
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
