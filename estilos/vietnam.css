@@ -53,7 +53,7 @@ h2 {
 
 p {
     font-size: clamp(.7rem, 2vw, 1rem);
-    padding-inline: 1%;
+    padding-inline: 2%;
     padding-block: 2%;
 }
 
