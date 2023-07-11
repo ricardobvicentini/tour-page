@@ -27,18 +27,32 @@ rightElements.forEach(rightHid => {
     rootMargin: "-500px 0px"
 })
 
+// Faders
 
 const faders = document.querySelectorAll('.fade-in');
-
 
 const appearOnScroll = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("appear", entry.isIntersecting)
     })
 }, {
-    rootMargin: "0px 0px -200px 0px"
+    rootMargin: "0px 0px -220px 0px"
 })
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader)
+})
+
+// Popers
+
+const popers = document.querySelectorAll('.pop-in');
+
+const appearOnShow = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("pop", entry.isIntersecting)
+    })
+})
+
+popers.forEach(poper => {
+    appearOnShow.observe(poper)
 })
