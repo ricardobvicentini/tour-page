@@ -31,7 +31,7 @@ body {
     text-decoration: none;
     font-size: clamp(3rem, 3vw, 4rem);
     color: #fff;
-    margin-top: 20%;
+    margin-top: 40%;
 }
 
 .wrapper-home a:hover {
@@ -198,10 +198,76 @@ body {
     min-height: 100%;
 }
 
+.img5 {
+    background-image: url(../images/t-img1.jpg);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img6 {
+    background-image: url(../images/t-img2.jpg);
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img7 {
+    background-image: url(../images/t-img3.jpg);
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img8 {
+    background-image: url(../images/bg-img2.jpg);
+    min-height: 100%;
+}
+
+.img9 {
+    background-image: url(../images/l-img1.jpg);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img10 {
+    background-image: url(../images/l-img2.jpg);
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img11 {
+    background-image: url(../images/l-img3.jpg);
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img12 {
+    background-image: url(../images/bg-img3.jpg);
+    min-height: 100%;
+}
+
 .img1, 
 .img2, 
 .img3,
-.img4 {
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.img11,
+.img12 {
     position: relative;
     background-color: #33333396;
     background-blend-mode: multiply;
