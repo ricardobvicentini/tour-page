@@ -56,3 +56,17 @@ const appearOnShow = new IntersectionObserver(entries => {
 popers.forEach(poper => {
     appearOnShow.observe(poper)
 })
+
+// Outers
+
+const outers = document.querySelectorAll('.fade-out');
+
+const disappearOnShow = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("disappear", entry.isIntersecting)
+    })
+})
+
+outers.forEach(outer => {
+    disappearOnShow.observe(outer)
+})

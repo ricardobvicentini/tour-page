@@ -14,6 +14,50 @@ body {
     overflow-x: hidden;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: clamp(15px, 7vw, 5rem);
+    padding: 1.5rem 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: auto;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: clamp(.8rem, 2vw, 1.5rem);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: clamp(.5rem, 1vw, 2.5rem);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    z-index: 100;
+    transition: 200ms;
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 10px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+/*  Fim header */
+
 .wrapper-home {
     height: 100vh;
     position: absolute;
@@ -113,6 +157,33 @@ body {
     bottom: 8%;
     left: 10%;
     color: #fff;
+}
+
+/*  */
+
+.content h3 {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.content p {
+    font-size: clamp(.7rem, 2vw, 1rem);
+    margin: 0.625rem 0.4rem 1rem 0;
+    padding: 0;
+    text-wrap: balance;
+}
+
+.content .btn {
+    display: inline-block;
+    padding-block: clamp(0.4rem, 1.5dvh, 0.81rem);
+    padding-inline: clamp(.8rem, 1.5vw, 1.75rem);
+    border: 2px solid #fff;
+    border-radius: 0.37rem;
+    font-size: clamp(.7rem, 2vw, 1rem);
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #444;
+    cursor: pointer;
+    transition: 500ms;
 }
 
 .right-info {
@@ -439,4 +510,14 @@ p {
 .pop-in.pop {
     filter: blur(0);
     opacity: 1;
+}
+
+.fade-out {
+    opacity: 1;
+    transition: all 200ms ease-in;
+    transition-delay: 100ms
+}
+
+.fade-out.disappear {
+    opacity: 0;
 }
