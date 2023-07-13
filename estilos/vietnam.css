@@ -463,6 +463,32 @@ p {
     text-shadow: 0 0 10px;
 }
 
+@media screen and (max-height: 500px) {
+    .content p {
+        position: absolute;
+        left: -10000px;
+    }
+
+    .content h3 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .nav-normal {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        margin-left: clamp(2rem, 2vw, 2.5rem);
+    }
+
+    .nav-icon a {
+        margin-left: 1rem;
+    }
+}
+
 /* JavaScript */
 
 .hidden {
